@@ -118,20 +118,25 @@ if __name__ == '__main__':
     
     particles = []
     for i in range(10):
-      particles.append(Particle(np.array([np.random.random(), np.random.random()]), np.array([(np.random.random()-.5)*0.1, (np.random.random()-.5)*0.1]), 0.05, 2.0))
+      particles.append(Particle(np.array([np.random.random()*0.8+0.1, np.random.random()*0.8+0.1]), np.array([(np.random.random()-.5)*0.1, (np.random.random()-.5)*0.1]), 0.05, 2.0))
     
     
     manager = EventManager(particles)
-    steps = 100
+    steps = 1000
     for i in range(steps):
+        axes = plt.axes()
         plt.title(particles[0].t)
         for p in particles:
-          plt.scatter(p._x[0], p._x[1])#,alpha=(i+1.)/float(steps))
+          #plt.scatter(p._x[0], p._x[1])#,alpha=(i+1.)/float(steps))
+          circle = plt.Circle((p._x[0], p._x[1]), radius=0.05, edgecolor='k')
+          axes.add_patch(circle)
           #print p._x
         plt.xlim([0,1])
         plt.ylim([0,1])
+        plt.gca().set_aspect('equal', adjustable='box')
         plt.savefig('%08d.png' % i)
-        
+        plt.close()
+
         manager.step()
         
         
