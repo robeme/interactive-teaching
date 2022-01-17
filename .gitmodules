@@ -1,0 +1,3 @@
+[submodule "atomare-materialmodellierung/ewald-sum"]
+	path = atomare-materialmodellierung/ewald-sum-notebooks
+	url = https://collaborating.tuhh.de/cla0253/ewald-sum.git
