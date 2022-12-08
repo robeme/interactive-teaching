@@ -4,3 +4,6 @@
 [submodule "vertiefung-polymere"]
 	path = vertiefung-polymere
 	url = https://github.com/BenBol/vertiefung-polymere.git
+[submodule "MLE-School"]
+	path = MLE-School
+	url = https://github.com/BenBol/MLE-School.git
