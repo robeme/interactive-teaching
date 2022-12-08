@@ -1,9 +1,6 @@
 [submodule "atomare-materialmodellierung/ewald-sum"]
 	path = atomare-materialmodellierung/ewald-sum-notebooks
 	url = https://collaborating.tuhh.de/cla0253/ewald-sum.git
-[submodule "vertiefung-polymere"]
-	path = vertiefung-polymere
-	url = https://github.com/BenBol/vertiefung-polymere.git
 [submodule "MLE-School"]
 	path = MLE-School
 	url = https://github.com/BenBol/MLE-School.git
