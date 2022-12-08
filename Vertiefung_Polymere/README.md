@@ -1,0 +1,1 @@
+# Interaktive Python Übung für die Vorlesung Vertiefende Grundlagen der Werkstoffwissenschaften. 
